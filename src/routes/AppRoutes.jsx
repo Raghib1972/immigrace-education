@@ -13,6 +13,9 @@ import NotFound from "../pages/NotFound";
 import Schools from "../pages/Schools";
 import Services from "../pages/Services";
 import Blog from "../pages/Blog";
+import PrivacyPolicy from "../pages/PrivacyPolicy";
+import TermsOfService from "../pages/TermsOfService";
+
 
 
 const AppRoutes = () => {
@@ -34,6 +37,8 @@ const AppRoutes = () => {
       <Route path="/services" element={<Services />} />
 
       {/* 404 PAGE (ALWAYS LAST) */}
+      <Route path="/privacy" element={<PrivacyPolicy />} />
+       <Route path="/terms" element={<TermsOfService />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

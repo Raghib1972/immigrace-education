@@ -1,5 +1,4 @@
 
-
 import ContactCTA from "../components/common/ContactCTA";
 
 // Images
@@ -12,23 +11,23 @@ const CareerCounselling = () => {
     {
       step: "01",
       title: "Career Assessment",
-      desc: "We evaluate your interests, strengths, aptitude and personality."
+      desc: "We evaluate your interests, strengths, aptitude and personality.",
     },
     {
       step: "02",
       title: "One-on-One Counselling",
-      desc: "Personal session with expert counsellors to understand your goals."
+      desc: "Personal session with expert counsellors to understand your goals.",
     },
     {
       step: "03",
       title: "Career Path Planning",
-      desc: "Clear roadmap of courses, skills and future opportunities."
+      desc: "Clear roadmap of courses, skills and future opportunities.",
     },
     {
       step: "04",
       title: "Action & Guidance",
-      desc: "Next steps for education, exams, colleges or overseas options."
-    }
+      desc: "Next steps for education, exams, colleges or overseas options.",
+    },
   ];
 
   const benefits = [
@@ -36,18 +35,22 @@ const CareerCounselling = () => {
     "Avoid wrong career decisions",
     "Personalized guidance (not generic advice)",
     "Ethical and transparent counselling",
-    "Support for both students and parents"
+    "Support for both students and parents",
   ];
 
   return (
     <div className="bg-white">
 
-      {/* ===== HERO IMAGE ===== */}
+      {/* ===== HERO SECTION ===== */}
       <section
-        className="relative h-[75vh] flex items-center justify-center bg-cover bg-center"
-        style={{ backgroundImage: `url(${careerImg})` }}
+        className="relative h-[80vh] md:h-[85vh] flex items-center justify-center bg-cover"
+        style={{
+          backgroundImage: `url(${careerImg})`,
+          backgroundPosition: "top center", // ✅ FACE FIX
+        }}
       >
-        <div className="absolute inset-0 bg-black/60"></div>
+        {/* Overlay (light for face visibility) */}
+        <div className="absolute inset-0 bg-black/45"></div>
 
         <div className="relative z-10 text-center text-white px-6">
           <h1 className="text-4xl md:text-5xl font-medium mb-4 tracking-tight">
@@ -61,10 +64,13 @@ const CareerCounselling = () => {
         </div>
       </section>
 
-      {/* ===== PROCESS ===== */}
+      {/* ===== PROCESS SECTION ===== */}
       <section
-        className="relative py-28 bg-cover bg-center"
-        style={{ backgroundImage: `url(${processImg})` }}
+        className="relative py-28 bg-cover"
+        style={{
+          backgroundImage: `url(${processImg})`,
+          backgroundPosition: "top center",
+        }}
       >
         <div className="absolute inset-0 bg-white/90"></div>
 
@@ -98,10 +104,13 @@ const CareerCounselling = () => {
 
       {/* ===== WHY IT MATTERS ===== */}
       <section
-        className="relative py-28 bg-cover bg-center"
-        style={{ backgroundImage: `url(${mattersImg})` }}
+        className="relative py-28 bg-cover"
+        style={{
+          backgroundImage: `url(${mattersImg})`,
+          backgroundPosition: "top center",
+        }}
       >
-        <div className="absolute inset-0 bg-black/70"></div>
+        <div className="absolute inset-0 bg-black/55"></div>
 
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-white">
           <h2 className="text-3xl font-medium text-center mb-10 tracking-tight">
@@ -126,6 +135,3 @@ const CareerCounselling = () => {
 };
 
 export default CareerCounselling;
-
-
-
