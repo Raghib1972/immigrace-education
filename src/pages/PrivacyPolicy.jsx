@@ -1,5 +1,5 @@
 import React from "react";
-import { FaShieldAlt, FaLock, FaUserShield, FaFileContract } from "react-icons/fa";
+import { FaFileContract, FaLock, FaShieldAlt, FaUserShield } from "react-icons/fa";
 
 const PrivacyPolicy = () => {
   return (
@@ -11,7 +11,18 @@ const PrivacyPolicy = () => {
       </div>
 
       {/* HEADER */}
-      <div className="relative z-10 bg-gradient-to-r from-blue-600 to-purple-600 py-16">
+      <div
+  className="relative z-10 py-24"
+  style={{
+    backgroundImage:
+      "linear-gradient(to right, rgba(15,23,42,0.65), rgba(30,27,75,0.65)), url('/images/privacy/privacy-bg.jpg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  }}
+>
+
+
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center gap-4 mb-4">
             <FaShieldAlt className="text-5xl text-white" />

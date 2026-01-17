@@ -15,6 +15,8 @@ import Services from "../pages/Services";
 import Blog from "../pages/Blog";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
 import TermsOfService from "../pages/TermsOfService";
+import CountryDetails from "../pages/CountryDetails";
+
 
 
 
@@ -26,6 +28,7 @@ const AppRoutes = () => {
       <Route path="/about" element={<About />} />
       <Route path="/career-counselling" element={<CareerCounselling />} />
       <Route path="/study-abroad" element={<StudyAbroad />} />
+      <Route path="/study-abroad/:id" element={<CountryDetails />} />
       <Route path="/test-preparation" element={<TestPreparation />} />
       <Route path="/blog" element={<Blog />} />
 

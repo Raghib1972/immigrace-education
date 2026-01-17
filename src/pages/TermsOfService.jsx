@@ -11,19 +11,30 @@ const TermsOfService = () => {
       </div>
 
       {/* HEADER */}
-      <div className="relative z-10 bg-gradient-to-r from-purple-600 to-blue-600 py-16">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-center gap-4 mb-4">
-            <FaFileContract className="text-5xl text-white" />
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-white text-center mb-4">
-            Terms of Service
-          </h1>
-          <p className="text-blue-100 text-center text-lg">
-            Last Updated: January 16, 2026
-          </p>
-        </div>
-      </div>
+<div
+  className="relative z-10 py-24"
+  style={{
+    backgroundImage:
+      "linear-gradient(to right, rgba(15,23,42,0.65), rgba(30,27,75,0.65)), url('/images/terms/terms-bg.jpg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  }}
+>
+  <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex items-center justify-center gap-4 mb-4">
+      <FaFileContract className="text-5xl text-white" />
+    </div>
+    <h1 className="text-4xl md:text-5xl font-bold text-white text-center mb-4">
+      Terms of Service
+    </h1>
+    <p className="text-blue-100 text-center text-lg">
+      Last Updated: January 16, 2026
+    </p>
+  </div>
+</div>
+
+
 
       {/* CONTENT */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
