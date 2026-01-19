@@ -252,9 +252,9 @@ const TermsOfService = () => {
               If you have any questions about these Terms of Service, please contact us:
             </p>
             <div className="space-y-2 text-gray-300">
-              <p><strong className="text-white">Email:</strong> chaseparvez@gmail.com</p>
+              <p><strong className="text-white">Email:</strong> info@immigrace.co.in</p>
               <p><strong className="text-white">Phone/WhatsApp:</strong> +91 8130464466</p>
-              <p><strong className="text-white">Address:</strong> Immigrace Education Consultants</p>
+              <p><strong className="text-white">Address:</strong> J-4/57 A Khirki Extension Malviya Nagar New Delhi-110017</p>
             </div>
           </div>
 
