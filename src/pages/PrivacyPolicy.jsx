@@ -1,5 +1,6 @@
+
 import React from "react";
-import { FaFileContract, FaLock, FaShieldAlt, FaUserShield } from "react-icons/fa";
+import { FaFileContract, FaLock, FaShieldAlt, FaUserShield, FaCreditCard } from "react-icons/fa";
 
 const PrivacyPolicy = () => {
   return (
@@ -12,17 +13,15 @@ const PrivacyPolicy = () => {
 
       {/* HEADER */}
       <div
-  className="relative z-10 py-24"
-  style={{
-    backgroundImage:
-      "linear-gradient(to right, rgba(15,23,42,0.65), rgba(30,27,75,0.65)), url('/images/privacy/privacy-bg.jpg')",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  }}
->
-
-
+        className="relative z-10 py-24"
+        style={{
+          backgroundImage:
+            "linear-gradient(to right, rgba(15,23,42,0.65), rgba(30,27,75,0.65)), url('/images/privacy/privacy-bg.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center gap-4 mb-4">
             <FaShieldAlt className="text-5xl text-white" />
@@ -43,7 +42,7 @@ const PrivacyPolicy = () => {
           {/* Introduction */}
           <div className="mb-10">
             <p className="text-gray-300 leading-relaxed">
-              At Immigrace Education, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
+              At Immigrace Education, accessible from <a href="https://immigraceducation.com" className="text-blue-400 hover:text-blue-300 underline">https://immigraceducation.com</a>, one of our main priorities is the privacy of our visitors and students. This Privacy Policy document contains types of information that is collected and recorded by us and how we use it.
             </p>
           </div>
 
@@ -55,28 +54,32 @@ const PrivacyPolicy = () => {
             </div>
             <div className="pl-11 space-y-4 text-gray-300">
               <p className="leading-relaxed">
-                We collect information that you provide directly to us, including:
+                We may collect personal information including but not limited to:
               </p>
               <ul className="space-y-2 ml-4">
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Personal details such as name, email address, phone number, and date of birth</span>
+                  <span>Name</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Educational background and academic records</span>
+                  <span>Phone number</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Career goals and counselling preferences</span>
+                  <span>Email address</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Payment and billing information</span>
+                  <span>Academic details</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Communication preferences and feedback</span>
+                  <span>Payment details</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                  <span>Communication records</span>
                 </li>
               </ul>
             </div>
@@ -90,107 +93,80 @@ const PrivacyPolicy = () => {
             </div>
             <div className="pl-11 space-y-4 text-gray-300">
               <p className="leading-relaxed">
-                We use the information we collect to:
+                We use the information we collect in the following ways:
               </p>
               <ul className="space-y-2 ml-4">
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Provide personalized career counselling and educational guidance</span>
+                  <span>To provide training for IELTS, PTE, SAT, GMAT, GRE, Duolingo, CELPIP</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Process applications for study abroad programs</span>
+                  <span>To provide German & French language training</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Communicate with you about our services and updates</span>
+                  <span>To provide Spoken English training</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Improve our services and develop new offerings</span>
+                  <span>To provide career counselling and study abroad guidance</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Comply with legal obligations and protect our rights</span>
+                  <span>To process payments securely through Razorpay</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
+                  <span>To communicate updates, schedules, and academic information</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
+                  <span>To improve our services and user experience</span>
                 </li>
               </ul>
             </div>
+          </div>
+
+          {/* Payment Security Section */}
+          <div className="mb-10">
+            <div className="flex items-center gap-3 mb-4">
+              <FaCreditCard className="text-2xl text-green-500" />
+              <h2 className="text-2xl font-bold text-white">Payment Security</h2>
+            </div>
+            <div className="pl-11 space-y-4 text-gray-300">
+              <p className="leading-relaxed">
+                All payments are processed securely through Razorpay. We do not store your card, UPI, or banking details on our servers.
+              </p>
+            </div>
+          </div>
+
+          {/* Data Protection Section */}
+          <div className="mb-10">
+            <h2 className="text-2xl font-bold text-white mb-4">Data Protection</h2>
+            <p className="text-gray-300 leading-relaxed">
+              We take appropriate security measures to protect your personal information from unauthorized access, alteration, or disclosure.
+            </p>
           </div>
 
           {/* Section 3 */}
           <div className="mb-10">
             <div className="flex items-center gap-3 mb-4">
-              <FaFileContract className="text-2xl text-green-500" />
-              <h2 className="text-2xl font-bold text-white">Information Sharing</h2>
+              <FaFileContract className="text-2xl text-blue-500" />
+              <h2 className="text-2xl font-bold text-white">Sharing of Information</h2>
             </div>
             <div className="pl-11 space-y-4 text-gray-300">
               <p className="leading-relaxed">
-                We do not sell your personal information. We may share your information with:
+                We do not sell, trade, or rent users' personal identification information to others.
               </p>
-              <ul className="space-y-2 ml-4">
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Educational institutions and universities for admission purposes</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Service providers who assist in our operations</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Legal authorities when required by law</span>
-                </li>
-              </ul>
             </div>
           </div>
 
-          {/* Section 4 */}
+          {/* Consent Section */}
           <div className="mb-10">
-            <h2 className="text-2xl font-bold text-white mb-4">Data Security</h2>
+            <h2 className="text-2xl font-bold text-white mb-4">Consent</h2>
             <p className="text-gray-300 leading-relaxed">
-              We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.
-            </p>
-          </div>
-
-          {/* Section 5 */}
-          <div className="mb-10">
-            <h2 className="text-2xl font-bold text-white mb-4">Your Rights</h2>
-            <div className="text-gray-300 space-y-4">
-              <p className="leading-relaxed">You have the right to:</p>
-              <ul className="space-y-2 ml-4">
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Access and receive a copy of your personal information</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Request correction of inaccurate information</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Request deletion of your personal information</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
-                  <span>Opt-out of marketing communications</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Section 6 */}
-          <div className="mb-10">
-            <h2 className="text-2xl font-bold text-white mb-4">Cookies and Tracking</h2>
-            <p className="text-gray-300 leading-relaxed">
-              We use cookies and similar tracking technologies to enhance your experience on our website. You can control cookies through your browser settings, but disabling them may affect your ability to use certain features of our website.
-            </p>
-          </div>
-
-          {/* Section 7 */}
-          <div className="mb-10">
-            <h2 className="text-2xl font-bold text-white mb-4">Changes to This Policy</h2>
-            <p className="text-gray-300 leading-relaxed">
-              We may update this Privacy Policy from time to time. We will notify you of any significant changes by posting the new policy on our website and updating the "Last Updated" date.
+              By using our website, you hereby consent to our Privacy Policy.
             </p>
           </div>
 

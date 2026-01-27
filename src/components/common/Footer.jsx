@@ -149,10 +149,12 @@ const Footer = () => {
           </p>
 
           <div className="flex items-center gap-6">
-            <a href="/privacy" className="hover:text-white">Privacy Policy</a>
-            <span className="text-slate-700">•</span>
-            <a href="/terms" className="hover:text-white">Terms of Service</a>
-          </div>
+  <a href="/privacy" className="hover:text-white">Privacy Policy</a>
+  <span className="text-slate-700">•</span>
+  <a href="/terms" className="hover:text-white">Terms of Service</a>
+  <span className="text-slate-700">•</span>
+  <a href="/refund" className="hover:text-white">Refund Policy</a>
+</div>
 
           <span className="text-xs">
             Made smarter with{" "}

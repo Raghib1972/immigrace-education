@@ -15,6 +15,7 @@ import Services from "../pages/Services";
 import Blog from "../pages/Blog";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
 import TermsOfService from "../pages/TermsOfService";
+import RefundPolicy from "../pages/RefundPolicy";
 import CountryDetails from "../pages/CountryDetails";
 
 
@@ -42,6 +43,7 @@ const AppRoutes = () => {
       {/* 404 PAGE (ALWAYS LAST) */}
       <Route path="/privacy" element={<PrivacyPolicy />} />
        <Route path="/terms" element={<TermsOfService />} />
+       <Route path="/refund" element={<RefundPolicy />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
